@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import Props1 from './Props1'
+// import Props1 from './Props1'
 
 function PropsKaBaap() {
   const data = [

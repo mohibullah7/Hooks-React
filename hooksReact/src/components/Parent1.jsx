@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Child1 from './Child1'
 
 function Parent1() {
@@ -27,13 +27,29 @@ function Parent1() {
 
     }
   ]
+  const [arrdata,setarr]=useState(rawdata)
+
+  const chnageOnclick=(chnageindex)=>{
+    setarr((prev)=>{
+   return prev.map((item,index)=>{
+      if(index === chnageindex) return {...item ,friend: !item.friend};
+      
+        return item;
+      
+    })
+   })
+  }
   return (
     <div>
       <div className="w-full h-screen bg-zinc-300 flex justify-center items-center gap-10">
-
+          {arrdata.map((item,index)=>(
+            <Child1  values ={item} fnc = {chnageOnclick} index={index}></Child1>
+          ))}
       </div>
     </div>
-  )
+
+
+  );
 }
 
 export default Parent1

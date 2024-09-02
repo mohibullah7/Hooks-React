@@ -1,6 +1,7 @@
 import React from 'react'
 
-function Child1() {
+function Child1({values,fnc,index}) {
+  const {name,job,image,friend}=values;
   return (
     <div>
        <div className="w-48 h-62 bg-zinc-100 rounded-md  flex flex-col  overflow-hidden">
@@ -14,7 +15,7 @@ function Child1() {
         <div className="">
           <h1 className="text-sm font-bold px-3 mt-2">{name}</h1>
           <h2 className="text-xs px-3 font-semibold">{job}</h2>
-          <button onClick={()=>chnageOnclick(index)}
+          <button onClick={()=> fnc(index)}
            className={`px-4 py-[2px]  ms-3 mt-2 mb-2 ${friend === true ?'bg-blue-500':'bg-gray-500'} rounded-md text-white text-sm`}>{friend === true ? 'Friend':"Cancel Request"}
             
           </button>
