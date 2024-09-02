@@ -11,17 +11,17 @@ function PropsKaBaap() {
 
     },
     {
-      name :'Rahul Gandhi',
+      name :'Nawaz Sharif',
       job:'Designer ',
-      image:'https://images.pexels.com/photos/2379004/pexels-photo-2379004.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      image:'https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/PrimeMinisterNawazSharif.jpg/220px-PrimeMinisterNawazSharif.jpg',
       friend: false 
 
 
     },
     {
-      name :'Zardari',
+      name :'Lumber One',
       job:'Plumber',
-      image:'https://images.pexels.com/photos/4505269/pexels-photo-4505269.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
+      image:'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/General_Asim_Munir_%28Pakistan%29.jpg/220px-General_Asim_Munir_%28Pakistan%29.jpg',
       friend: false 
 
 
@@ -44,7 +44,7 @@ function PropsKaBaap() {
     <div>
       <div className="w-full h-screen bg-zinc-300 flex justify-center items-center gap-10">
         {values.map((item,index)=>(
-      <Props1 chacha={item} index={index} chnageOnclick={chnageOnclick} ></Props1>
+      <Props1 chacha={item} index={index}  chnageOnclick={chnageOnclick} ></Props1>
 
         ))}
 
