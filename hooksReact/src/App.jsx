@@ -5,6 +5,7 @@ import Props1 from './components/Props1'
 import PropsKaBaap from './components/PropsKaBaap'
 
 import './App.css'
+import Parent1 from './components/Parent1'
 
 
 function App() {
@@ -14,7 +15,8 @@ function App() {
     <>
       {/* <Hooks1/> */}
       {/* <Hooks2/> */}
-      <PropsKaBaap/>
+      {/* <PropsKaBaap/> */}
+      <Parent1/>
     </>
   )
 }
