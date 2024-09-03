@@ -6,6 +6,7 @@ import PropsKaBaap from './components/PropsKaBaap'
 
 import './App.css'
 import Parent1 from './components/Parent1'
+import Parent2 from './components/Parent2'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       {/* <Hooks2/> */}
       {/* <PropsKaBaap/> */}
       <Parent1/>
+      <Parent2/>
     </>
   )
 }
